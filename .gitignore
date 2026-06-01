@@ -6,3 +6,4 @@ media/*.MP4
 # Keep compressed versions and photos
 !media/compressed/
 !media/photos/
+.vercel
