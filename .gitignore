@@ -1,0 +1,8 @@
+# Exclude original uncompressed video files
+snow-reel.mov
+media/*.mp4
+media/*.mov
+media/*.MP4
+# Keep compressed versions and photos
+!media/compressed/
+!media/photos/
