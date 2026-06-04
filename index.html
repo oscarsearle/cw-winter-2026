@@ -262,16 +262,18 @@
     @media (min-width: 768px)  { .work-card { width: 28vw; } }
     @media (min-width: 1280px) { .work-card { width: 22vw; } }
 
-    /* Swipe hint */
+    /* Scroll hint */
     .swipe-hint {
-      display: flex; align-items: center; justify-content: center; gap: 6px;
-      margin-top: 14px; font-size: 11.5px; font-weight: 500; letter-spacing: 0.04em;
-      color: rgba(255,255,255,0.35);
-      animation: swipe-nudge 2.2s ease-in-out infinite;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      margin-top: 16px; font-size: 11.5px; font-weight: 500; letter-spacing: 0.06em;
+      text-transform: uppercase; color: rgba(255,255,255,0.3);
+    }
+    .swipe-hint svg {
+      animation: swipe-nudge 1.8s ease-in-out infinite;
     }
     @keyframes swipe-nudge {
-      0%, 100% { opacity: 0.35; transform: translateX(0); }
-      50% { opacity: 0.7; transform: translateX(5px); }
+      0%, 100% { opacity: 0.3; transform: translateX(0); }
+      50% { opacity: 0.8; transform: translateX(6px); }
     }
     .work-card video {
       position: absolute; inset: 0; width: 100%; height: 100%;
@@ -683,6 +685,11 @@
           <div class="card-overlay"><div class="card-play"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg></div></div>
         </div>
       </div>
+    </div>
+
+    <div class="swipe-hint">
+      <span>Scroll to explore</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </div>
 
     <!-- Row 2 -->
